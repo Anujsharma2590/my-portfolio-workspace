@@ -13,7 +13,7 @@ const Footer = () => {
         </Link>
       </div>
       <div>
-        &copy; {new Date().getFullYear()} My Awesome Blog. All rights reserved.
+        &copy; {new Date().getFullYear()} Anuj Sharma. All rights reserved.
       </div>
     </footer>
   );
