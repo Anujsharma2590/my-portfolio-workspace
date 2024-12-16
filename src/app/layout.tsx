@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { siteMetadata } from "../utils/siteMetaData";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,8 +59,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
-      <body>
+      <body className="min-h-screen grainy">
         {/* Main Content */}
+        <Navbar />
         <main role="main">{children}</main>
         {/* Footer */}
         <Footer />
