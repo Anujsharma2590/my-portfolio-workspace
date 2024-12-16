@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import React, { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "../components/Footer";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -62,7 +64,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className="min-h-screen grainy">
         {/* Main Content */}
         <Navbar />
-        <main role="main">{children}</main>
+        <main role="main">
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </main>
         {/* Footer */}
         <Footer />
       </body>
