@@ -29,8 +29,8 @@ export default function Page() {
             Hi, I'm <span className="text-[#333333]">Anuj</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+            I am a frontend developer specializing in building interactive and
+            user-friendly web applications.
           </p>
         </div>
       </div>
