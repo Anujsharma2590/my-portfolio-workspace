@@ -1,7 +1,8 @@
 {
     "git": {
       "deploymentEnabled": {
-        "feat/home": false
+        "master": true
       }
     }
   }
+  
