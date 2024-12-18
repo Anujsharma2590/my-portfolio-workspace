@@ -15,11 +15,6 @@ const Navbar = () => {
             <div>
               <Link href="/">Home</Link>
             </div>
-
-            <div>
-              <ThemeSwitcher />
-            </div>
-
           </div>
         </div>
       </MaxWidthWrapper>
