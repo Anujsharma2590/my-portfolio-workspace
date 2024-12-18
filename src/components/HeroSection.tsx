@@ -47,10 +47,10 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <Image
-          src="/profile.jpg"
+          src="/profile.png"
           alt="Anuj Sharma"
-          width={500}
-          height={500}
+          width={700}
+          height={700}
           className="object-cover"
           priority
         />

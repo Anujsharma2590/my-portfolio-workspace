@@ -7,6 +7,7 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { siteMetadata } from "../utils/siteMetaData";
 import Navbar from "../components/Navbar";
+import { ThemeProvider } from "../components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,15 +63,21 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
       <body className="min-h-screen grainy">
-        {/* Main Content */}
-        <Navbar />
-        <main role="main">
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </main>
-        {/* Footer */}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main role="main">
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </main>
+          {/* Footer */}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
