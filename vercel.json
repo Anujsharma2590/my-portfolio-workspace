@@ -1,7 +1,7 @@
 {
-    "git": {
-      "deploymentEnabled": {
-        "feat/home": false
-      }
+  "git": {
+    "deploymentEnabled": {
+      "feat/home": false
     }
   }
+}

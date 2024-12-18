@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./util-component/MaxWidthWrapper";
-import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
   return (

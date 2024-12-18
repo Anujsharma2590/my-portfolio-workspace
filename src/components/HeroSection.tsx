@@ -15,7 +15,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I'm <span className="text-blue-500">Anuj Sharma</span>
+          Hi <span className="text-blue-500">Anuj Sharma</span>
         </motion.h1>
 
         {/* Subtitle */}
