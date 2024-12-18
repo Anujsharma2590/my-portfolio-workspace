@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./util-component/MaxWidthWrapper";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
   return (
@@ -11,9 +12,9 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden items-center space-x-4 sm:flex">
-            <>
+            <div>
               <Link href="/">Home</Link>
-            </>
+            </div>
           </div>
         </div>
       </MaxWidthWrapper>

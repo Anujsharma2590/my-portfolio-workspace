@@ -15,3 +15,7 @@ https://wallis.dev/
 https://apoorvtaneja.netlify.app/
 
 https://minimal-nextjs-portfolio-website.vercel.app/
+
+https://dev.to/themeselection/10-trending-animated-ui-component-libraries-4joe?ref=dailydev
+
+https://medium.com/@mdtaqui.jhar/6-repos-to-master-nextjs-d01672dbea7c
