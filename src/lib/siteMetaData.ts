@@ -5,10 +5,10 @@ export const siteMetadata = {
   description:
     "Welcome to Anuj Sharma's professional portfolio showcasing expertise in frontend development, React.js, and modern web technologies.",
   language: "en-us",
-  theme: "system", // system, dark or light
-  siteUrl: "https://anujsharma.dev/", // your website URL
+  theme: "system", 
+  siteUrl: "https://anujsharma.dev/", 
   siteLogo: "/logo.png",
-  socialBanner: "/social-banner.png", // add social banner in the public folder
+  socialBanner: "/social-banner.png", 
   email: "aanuj.sharma2590@gmail.com",
   github: "https://github.com/Anujsharma2590",
   twitter: "https://twitter.com/code_bucks",
