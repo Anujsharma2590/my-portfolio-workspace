@@ -6,9 +6,12 @@ import { Copy } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import { WordRotate } from "./magicui/word-rotate";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [copied, setCopied] = useState(false);
+  const pathname = usePathname();
+
   const copyEmail = () => {
     navigator.clipboard.writeText("aanuj.sharma2590@gmail.com");
     setCopied(true);
@@ -54,6 +57,10 @@ const Header = () => {
               className={buttonVariants({
                 variant: "ghost",
                 size: "sm",
+                className:
+                  pathname === "/"
+                    ? "text-primary font-semibold underline "
+                    : "text-muted-foreground",
               })}
             >
               Home
@@ -64,14 +71,13 @@ const Header = () => {
               className={buttonVariants({
                 variant: "ghost",
                 size: "sm",
-                className: "w-[80px]",
+                className:
+                  pathname === "/projects-skills"
+                    ? "text-primary font-semibold underline w-[80px]"
+                    : "w-[80px]",
               })}
             >
-              <WordRotate
-                className="text-sm font-medium text-black dark:text-white"
-                words={["Projects", "Skills"]}
-                duration={4000}
-              />
+              <WordRotate words={["Projects", "Skills"]} duration={4000} />
             </Link>
 
             <Link
@@ -79,6 +85,10 @@ const Header = () => {
               className={buttonVariants({
                 variant: "ghost",
                 size: "sm",
+                className:
+                  pathname === "/articles"
+                    ? "text-primary font-semibold underline "
+                    : "foreground",
               })}
             >
               Articles
