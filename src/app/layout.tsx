@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+
 
 import type { ReactNode } from "react";
 import Header from "../components/Header";
@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { Metadata } from "next";
 import { siteMetadata } from "@/lib/siteMetaData";
+import './globals.css'
 
 const inter = Inter({
   subsets: ["latin"],
