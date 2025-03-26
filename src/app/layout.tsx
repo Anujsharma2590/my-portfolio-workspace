@@ -1,12 +1,13 @@
 
 
 import type { ReactNode } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { Metadata } from "next";
 import { siteMetadata } from "@/lib/siteMetaData";
 import './globals.css'
+
+import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,11 +61,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+        <body
+          className={cn(
+            'min-h-screen font-sans antialiased grainy',
+            inter.className,
+          )}
+        >
+          <Header />
+          {children}
+        </body>
     </html>
   );
 }
