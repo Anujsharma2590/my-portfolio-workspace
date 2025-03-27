@@ -7,6 +7,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { WordRotate } from "./magicui/word-rotate";
 import { usePathname } from "next/navigation";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {
   const [copied, setCopied] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+    <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-border bg-background/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           {/* Logo + Name + Email Section */}
@@ -35,7 +36,7 @@ const Header = () => {
             <div className="flex flex-col">
               <span className="font-semibold text-base">Anuj Sharma</span>
               <div className="flex items-center space-x-1">
-                <span className="text-xs text-gray-600">
+                <span className="text-xs text-muted-foreground">
                   aanuj.sharma2590@gmail.com
                 </span>
                 <button
@@ -93,6 +94,7 @@ const Header = () => {
             >
               Articles
             </Link>
+            <ThemeSwitch />
           </div>
         </div>
       </MaxWidthWrapper>
