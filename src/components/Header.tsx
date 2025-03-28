@@ -5,7 +5,7 @@ import { buttonVariants } from "./ui/button";
 import { Copy } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import { WordRotate } from "./magicui/word-rotate";
+// import { WordRotate } from "./magicui/word-rotate";
 import { usePathname } from "next/navigation";
 import ThemeSwitch from "./ThemeSwitch";
 
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-border bg-background/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
-        <div className="flex h-14 items-center justify-between border-b border-zinc-200">
+        <div className="flex h-14 items-center justify-between border-b ">
           {/* Logo + Name + Email Section */}
           <div className="flex items-center gap-2 z-40">
             <Link href="/" className="flex z-40 font-semibold">
@@ -67,7 +67,7 @@ const Header = () => {
               Home
             </Link>
 
-            <Link
+            {/* <Link
               href="/projects-skills"
               className={buttonVariants({
                 variant: "ghost",
@@ -93,7 +93,7 @@ const Header = () => {
               })}
             >
               Articles
-            </Link>
+            </Link> */}
             <ThemeSwitch />
           </div>
         </div>

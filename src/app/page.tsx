@@ -1,4 +1,11 @@
-import { MapPin, ArrowUpRight, Github, Linkedin } from "lucide-react";
+import {
+  MapPin,
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  FileText,
+  Download,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -88,6 +95,22 @@ export default function Home() {
             <Github className="w-4 h-4" />
             GitHub
             <ArrowUpRight className="w-4 h-4" />
+          </Link>
+
+          <Link
+            href="/Resume-AnujSharma.pdf" 
+            download="Anuj_Sharma_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={buttonVariants({
+              variant: "outline",
+              size: "sm",
+              className: "flex items-center gap-2 px-4 py-2",
+            })}
+          >
+            <FileText className="w-4 h-4" />
+            Resume
+            <Download className="w-4 h-4" />
           </Link>
         </div>
         <h2 className="text-left scroll-m-20 text-l font-bold tracking-tight sm:text-xl mb-4 mt-8">
@@ -409,9 +432,9 @@ export default function Home() {
                                 Tech Stack:
                               </span>{" "}
                               <span className="italic">
-                                HTML/CSS, ReactJS, JavaScript, TypeScript,
-                                Zustand, Redux, AntD, SASS , ag-Grid, Webpack,
-                                Babel.
+                                HTML/CSS, ReactJS/NextJs, JavaScript,
+                                TypeScript, Zustand, Redux, AntD, SASS ,
+                                ag-Grid, Webpack, Babel.
                               </span>
                             </span>
                           </li>
