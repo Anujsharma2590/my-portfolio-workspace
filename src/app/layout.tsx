@@ -1,13 +1,12 @@
-import { Metadata } from "next";
-import React, { ReactNode } from "react";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "../components/Footer";
+import type { ReactNode } from "react";
 import { Inter, Roboto_Mono } from "next/font/google";
+import { Metadata } from "next";
+import { siteMetadata } from "@/lib/siteMetaData";
 import "./globals.css";
-import { siteMetadata } from "../utils/siteMetaData";
-import Navbar from "../components/Navbar";
-import { ThemeProvider } from "../components/theme-provider";
+
+import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
+import { Providers } from "./providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,26 +57,19 @@ export const metadata: Metadata = {
     },
   },
 };
-
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
-      <body className="min-h-screen grainy">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <main role="main">
-            {children}
-            <Analytics />
-            <SpeedInsights />
-          </main>
-          {/* Footer */}
-          <Footer />
-        </ThemeProvider>
+    <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`} suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen font-sans antialiased grainy bg-background text-foreground",
+          inter.className
+        )}
+      >
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );

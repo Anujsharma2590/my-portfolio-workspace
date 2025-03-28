@@ -1,0 +1,7 @@
+$primary-color: blue;
+
+// component.module.scss
+.button {
+  @apply p-4 rounded;
+  background-color: $primary-color;
+} 
