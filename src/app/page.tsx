@@ -135,31 +135,27 @@ export default function Home() {
               </AccordionTrigger>
 
               <AccordionContent>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
-                  <li>
-                    Led the development of{" "}
-                    <span className="font-medium text-foreground">
-                      Holiday Widget
-                    </span>
-                    , a JavaScript SDK that enabled 200+ partners to embed quote
-                    generation flows into their websites within the first month
-                    — improving usability and significantly reducing support
-                    tickets.
-                  </li>
+                <div className="max-w-3xl">
+                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
+                    <li>
+                      Led the development of{" "}
+                      <span className="font-medium text-foreground">
+                        Holiday Widget
+                      </span>
+                      , a JavaScript SDK that enabled 200+ partners to embed
+                      quote generation flows into their websites within the
+                      first month — improving usability and significantly
+                      reducing support tickets.
+                    </li>
 
-                  <li>
-                    Led redesign of equity management dashboard with 25%
-                    performance boost.
-                  </li>
-                  <li>
-                    Collaborated closely with backend team to integrate GraphQL
-                    APIs.
-                  </li>
-                  <li>
-                    Developed internal micro frontend apps using Appshell
-                    architecture.
-                  </li>
-                </ul>
+                    <li>
+                      Spearheaded the end-to-end development of the Sightseeing
+                      booking flow, allowing users to seamlessly search, select,
+                      and book sightseeing activities with integrated transfer
+                      options (Private/SIC).
+                    </li>
+                  </ul>
+                </div>
               </AccordionContent>
             </AccordionItem>
 
@@ -205,24 +201,50 @@ export default function Home() {
               </AccordionTrigger>
 
               <AccordionContent>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
-                  <li>
-                    Built scalable, component-based architecture using React and
-                    Zustand.
-                  </li>
-                  <li>
-                    Led redesign of equity management dashboard with 25%
-                    performance boost.
-                  </li>
-                  <li>
-                    Collaborated closely with backend team to integrate GraphQL
-                    APIs.
-                  </li>
-                  <li>
-                    Developed internal micro frontend apps using Appshell
-                    architecture.
-                  </li>
-                </ul>
+                <div className="max-w-3xl">
+                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
+                    <li>
+                      Engineered and delivered the{" "}
+                      <span className="font-medium text-foreground">
+                        OnTrip module
+                      </span>
+                      , integrating real-time APIs to manage dynamic trip
+                      statuses, driver assignments, and pickup/drop logistics —
+                      significantly improving operational visibility and trip
+                      management flexibility.
+                    </li>
+
+                    <li>
+                      Integrated{" "}
+                      <span className="font-medium text-foreground">
+                        Hotel Holiday Integration (HHI)
+                      </span>{" "}
+                      into the internal booking platform{" "}
+                      <span className="font-medium text-foreground">
+                        Aryabhatt
+                      </span>
+                      , enabling seamless end-to-end package booking with hotel
+                      selection for internal operations.
+                    </li>
+
+                    <li>
+                      Contributed to the migration from Create React App (CRA)
+                      to a modular architecture, collaborating with the team to
+                      improve codebase scalability, maintainability, and
+                      long-term structure.
+                    </li>
+                    <li>
+                      <span className="text-xs text-muted-foreground">
+                        <span className="font-medium text-foreground">
+                          Tech Stack:
+                        </span>{" "}
+                        <span className="italic">
+                          HTML, CSS, JavaScript, ReactJS, Redux, Material UI
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </AccordionContent>
             </AccordionItem>
 
@@ -266,24 +288,138 @@ export default function Home() {
               </AccordionTrigger>
 
               <AccordionContent>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
-                  <li>
-                    Built scalable, component-based architecture using React and
-                    Zustand.
-                  </li>
-                  <li>
-                    Led redesign of equity management dashboard with 25%
-                    performance boost.
-                  </li>
-                  <li>
-                    Collaborated closely with backend team to integrate GraphQL
-                    APIs.
-                  </li>
-                  <li>
-                    Developed internal micro frontend apps using Appshell
-                    architecture.
-                  </li>
-                </ul>
+                <div className="max-w-3xl">
+                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
+                    {/* Equity Management Section */}
+                    <div>
+                      <p className="text-sm font-medium text-foreground">
+                        Equity Management Platform (CapTable, ESOPs, Liquidity)
+                      </p>
+                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                        <li>
+                          Developed bulk and single equity grant flows,
+                          enhancing user experience, customization flexibility,
+                          and operational efficiency for equity management
+                          tasks.
+                        </li>
+                        <li>
+                          Integrated advanced server-side{" "}
+                          <span className="font-medium text-foreground">
+                            ag-Grid
+                          </span>{" "}
+                          tables to replace legacy table components, enabling
+                          efficient handling of large datasets and adding
+                          support for advanced filtering — significantly
+                          improving data management and admin productivity.
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Private Market Liquidity Section */}
+                    <div className="pt-2">
+                      <p className="text-sm font-medium text-foreground">
+                        Private Market Liquidity (Secondary Blocks,
+                        Exercise/Surrender Options, Share Transfer)
+                      </p>
+                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                        <li>
+                          Contributed to the{" "}
+                          <span className="font-medium text-foreground">
+                            qapita component
+                          </span>{" "}
+                          library by developing reusable UI components, helping
+                          standardize the design system across the platform and
+                          streamline frontend development workflows.
+                        </li>
+                        <li>
+                          Implemented an{" "}
+                          <span className="font-medium text-foreground">
+                            appshell architecture
+                          </span>{" "}
+                          to unify the{" "}
+                          <span className="font-medium text-foreground">
+                            Share Transfer
+                          </span>{" "}
+                          and{" "}
+                          <span className="font-medium text-foreground">
+                            Liquidity
+                          </span>{" "}
+                          applications using a{" "}
+                          <span className="font-medium text-foreground">
+                            micro-frontend approach
+                          </span>{" "}
+                          — enabling independent development and deployment
+                          while enhancing system modularity and maintainability.
+                        </li>
+                        <li>
+                          Spearheaded the development of a{" "}
+                          <span className="font-medium text-foreground">
+                            real-time tracking interface
+                          </span>{" "}
+                          for monitoring option exercise and surrender events —
+                          improving data visibility and enhancing transparency
+                          for internal stakeholders and external participants.
+                        </li>
+
+                        <li>
+                          Optimized bundle size and performance by implementing{" "}
+                          <span className="font-medium text-foreground">
+                            domain-based code splitting
+                          </span>
+                          ,{" "}
+                          <span className="font-medium text-foreground">
+                            lazy loading
+                          </span>
+                          , and{" "}
+                          <span className="font-medium text-foreground">
+                            package-level splitting using Webpack
+                          </span>{" "}
+                          — resulting in faster initial loads and improved
+                          runtime efficiency across the platform.
+                        </li>
+
+                        <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-2 text-left">
+                          <li>
+                            Contributed to the development of the{" "}
+                            <span className="font-medium text-foreground">
+                              Open Marketplace
+                            </span>{" "}
+                            application, allowing admins to create and manage
+                            primary/secondary equity blocks via a dashboard with
+                            advanced filters, search, and create flows.
+                          </li>
+                          <li>
+                            Implemented dynamic block views that surface
+                            detailed company information, integrated data rooms,
+                            and assignment configuration for investors.
+                          </li>
+                          <li>
+                            Built configurable access controls to define
+                            investor-specific visibility, ensuring each investor
+                            only sees the intended subset of information.
+                          </li>
+                          <li>
+                            Developed the investor-facing interface to display
+                            assigned blocks with tailored content and structured
+                            access to relevant documents and block details.
+                          </li>
+                          <li>
+                            <span className="text-xs text-muted-foreground">
+                              <span className="font-medium text-foreground">
+                                Tech Stack:
+                              </span>{" "}
+                              <span className="italic">
+                                HTML/CSS, ReactJS, JavaScript, TypeScript,
+                                Zustand, Redux, AntD, SASS , ag-Grid, Webpack,
+                                Babel.
+                              </span>
+                            </span>
+                          </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
               </AccordionContent>
             </AccordionItem>
 
